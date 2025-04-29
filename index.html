@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hearthan - Half the Month. Wholehearted Care.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F9F4EF;
+      color: #3B2C24;
+    }
+    header {
+      background-color: #FFF5EA;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #3B2C24;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #FFE3C8, #FCECD6);
+    }
+    .hero h2 {
+      font-family: 'Lora', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-buttons button {
+      background-color: #C25732;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .quick-links {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+      background-color: #FFF0DB;
+      text-align: center;
+    }
+    .quick-links div {
+      width: 20%;
+    }
+    .section {
+      padding: 3rem 2rem;
+    }
+    .section h3 {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .how-it-works {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+    }
+    .how-it-works div {
+      width: 25%;
+      text-align: center;
+    }
+    .donation-form {
+      background-color: #FFEDE0;
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .donation-form h3 {
+      font-family: 'Lora', serif;
+      text-align: center;
+    }
+    .donation-form input[type="text"],
+    .donation-form input[type="email"],
+    .donation-form input[type="number"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .donation-form button {
+      background-color: #C25732;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+    footer {
+      background-color: #3B2C24;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hearthan</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Request Food</a>
+      <a href="#">Volunteer</a>
+      <a href="#donate">Donate</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Half the Month. Wholehearted Care.</h2>
+    <p>Helping our elders thrive with warm meals, kind hearts, and timely support.</p>
+    <div class="cta-buttons">
+      <button>Request Food</button>
+      <button onclick="document.getElementById('donate').scrollIntoView({ behavior: 'smooth' });">Donate Today</button>
+    </div>
+  </section>
+  <section class="quick-links">
+    <div>
+      <strong>📅</strong>
+      <p>View Pickup/Delivery Dates</p>
+    </div>
+    <div>
+      <strong>📞</strong>
+      <p>Call to Request</p>
+    </div>
+    <div>
+      <strong>📝</strong>
+      <p>Fill Out Request Form</p>
+    </div>
+    <div>
+      <strong>👵</strong>
+      <p>Senior-Focused FAQ</p>
+    </div>
+  </section>
+  <section class="section">
+    <h3>Why We Serve</h3>
+    <p>
+      Hearthan exists to bring warmth, nourishment, and heartfelt support to elders and families in need. We believe no one should feel forgotten, especially in the second half of the month when assistance tends to fade. Our mission is to serve our community with kindness by providing meals, supplies, and a sense of home to those who need it most.
+    </p>
+  </section>
+  <section class="section">
+    <h3>How It Works</h3>
+    <div class="how-it-works">
+      <div>
+        <strong>📨 Submit or Call</strong>
+        <p>A simple form or call from a loved one.</p>
+      </div>
+      <div>
+        <strong>🚚 Schedule Pickup or Delivery</strong>
+        <p>You choose how it arrives.</p>
+      </div>
+      <div>
+        <strong>🍽️ Receive with Love</strong>
+        <p>Nourishment for body and soul.</p>
+      </div>
+    </div>
+  </section>
+  <section class="donation-form" id="donate">
+    <h3>Make a Donation</h3>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+      <label for="amount">Donation Amount ($):</label>
+      <input type="number" id="amount" name="amount" min="1" required>
+
+      <button type="submit">Donate Securely</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Hearthan. All rights reserved. | Designed with heart.</p>
+  </footer>
+</body>
+</html>
